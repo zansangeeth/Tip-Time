@@ -2,6 +2,7 @@ package com.zasa.tiptime
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 
 import com.zasa.tiptime.databinding.ActivityMainBinding
 
@@ -44,14 +45,17 @@ class MainActivity : AppCompatActivity() {
 //        }
 
         displayTip(tip)
+        Log.d("sample", "tip : $tip")
+
+
 
     }
-    var apple = "apple"
 
 
     private fun displayTip(tip: Double) {
 
-        binding.tipResults.text =getString(R.string.tip_amount)
+        binding.tipResults.text = getString(R.string.tip_amount)
+
     }
 
 
