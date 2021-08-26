@@ -3,6 +3,8 @@ plugins {
     id 'kotlin-android'
 }
 
+apply plugin: 'kotlin-android-extensions'
+
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
@@ -33,8 +35,8 @@ android {
         jvmTarget = '1.8'
     }
 
-    buildFeatures {
-        viewBinding = true
+    dataBinding {
+        enabled = true
     }
 
 
